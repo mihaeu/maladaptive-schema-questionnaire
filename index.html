@@ -5,41 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YSQ-R</title>
+    <title>Maladaptive Schema Questionnaire</title>
     <style>
         @media only screen and (max-width: 600px) {
             .descriptions {
                 display: none;
             }
             input {
-                width: 2em;
-                height: 2em;
+                width: 1.5em;
+                height: 1.5em;
+                vertical-align: text-bottom;
             }
             label {
-                font-size: 2em;
+                font-size: 1.5em;
+                padding-left: 5px;
             }
         }
     </style>
 </head>
 
 <body>
-    <h1>YSQ-R</h1>
+    <h1>Maladaptive Schema Questionnaire</h1>
     <p>Created by Jeffrey Young, Ph.D. & Gary Brown, Ph.D.</p>
     <p>Revised by Ozgur Yalcin, Ida Marais, PhD, Christopher Lee, PhD, & Helen Correia, PhD</p>
 
-    <em>INSTRUCTIONS:</em>
+    <h2>Instructions</h2>
     <p>Listed below are statements that someone might use to describe him or herself. Please read each statement and
         decide how well it describes you. When you are not sure, base your answer on what you emotionally feel, NOT on
         what you think to be true. Choose the highest rating from 1 to 6 that describes you and write the number on the
         line before each statement.</p>
 
-    <em>RATING SCALE:</em>
+    <h2>Rating Scale</h2>
     <p>1 = Completely untrue of me</p>
     <p>2 = Mostly untrue of me</p>
     <p>3 = Slightly more true than untrue</p>
     <p>4 = Moderately true of me</p>
     <p>5 = Mostly true of me</p>
     <p>6 = Describes me perfectly</p>
+
+    <hr>
 
     <p>
         <button id="reset">Reset</button>
@@ -48,8 +52,10 @@
         <button id="evaluate" disabled="disabled">Evaluate</button>
     </p>
 
+    <hr>
 
     <section id="results" style="display: none;">
+        <h2>Results</h2>
         <section id="ED">
             <h2>Emotional Deprivation (<span class="score"></span>)</h2>
         </section>
@@ -112,9 +118,11 @@
         </section>
     </section>
 
-    <p>
+    <main>
+        <h2>Questionnaire</h2>
+    <h3>
         I haven't gotten enough love and attention.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ED1" value="1" id="ED1-1"><label for="ED1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ED1" value="2" id="ED1-2"><label for="ED1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -123,9 +131,9 @@
         <input type="radio" name="ED1" value="5" id="ED1-5"><label for="ED1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ED1" value="6" id="ED1-6"><label for="ED1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         For the most part, I haven't had someone to depend on for advice and emotional support.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ED2" value="1" id="ED2-1"><label for="ED2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ED2" value="2" id="ED2-2"><label for="ED2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -134,9 +142,9 @@
         <input type="radio" name="ED2" value="5" id="ED2-5"><label for="ED2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ED2" value="6" id="ED2-6"><label for="ED2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         For much of my life, I haven't had someone who wanted to get close to me and spend a lot of time with me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ED3" value="1" id="ED3-1"><label for="ED3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ED3" value="2" id="ED3-2"><label for="ED3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -145,9 +153,9 @@
         <input type="radio" name="ED3" value="5" id="ED3-5"><label for="ED3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ED3" value="6" id="ED3-6"><label for="ED3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         For much of my life, I haven't felt that I am special to someone.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ED4" value="1" id="ED4-1"><label for="ED4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ED4" value="2" id="ED4-2"><label for="ED4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -156,9 +164,9 @@
         <input type="radio" name="ED4" value="5" id="ED4-5"><label for="ED4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ED4" value="6" id="ED4-6"><label for="ED4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I have rarely had a strong person to give me sound advice or direction when I'm not sure what to do.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ED5" value="1" id="ED5-1"><label for="ED5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ED5" value="2" id="ED5-2"><label for="ED5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -168,9 +176,9 @@
         <input type="radio" name="ED5" value="6" id="ED5-6"><label for="ED5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I worry that people I feel close to will leave me or abandon me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AB1" value="1" id="AB1-1"><label for="AB1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AB1" value="2" id="AB1-2"><label for="AB1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -179,9 +187,9 @@
         <input type="radio" name="AB1" value="5" id="AB1-5"><label for="AB1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AB1" value="6" id="AB1-6"><label for="AB1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I don't feel that important relationships will last; I expect them to end.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AB2" value="1" id="AB2-1"><label for="AB2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AB2" value="2" id="AB2-2"><label for="AB2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -190,9 +198,9 @@
         <input type="radio" name="AB2" value="5" id="AB2-5"><label for="AB2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AB2" value="6" id="AB2-6"><label for="AB2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I feel addicted to partners who can't be there for me in a committed way.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AB3" value="1" id="AB3-1"><label for="AB3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AB3" value="2" id="AB3-2"><label for="AB3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -201,9 +209,9 @@
         <input type="radio" name="AB3" value="5" id="AB3-5"><label for="AB3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AB3" value="6" id="AB3-6"><label for="AB3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I become upset when someone leaves me alone, even for a short period of time.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AB4" value="1" id="AB4-1"><label for="AB4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AB4" value="2" id="AB4-2"><label for="AB4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -212,9 +220,9 @@
         <input type="radio" name="AB4" value="5" id="AB4-5"><label for="AB4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AB4" value="6" id="AB4-6"><label for="AB4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I can't let myself get very close to other people, because I can't be sure they'll always be there.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AB5" value="1" id="AB5-1"><label for="AB5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AB5" value="2" id="AB5-2"><label for="AB5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -224,9 +232,9 @@
         <input type="radio" name="AB5" value="6" id="AB5-6"><label for="AB5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
     <p>
-        The people close to me have been very unpredictable: one moment they're available and nice to me; the next,
+    h3  The people close to me have been very unpredictable: one moment they're available and nice to me; the next,
         they're angry, upset, self-absorbed, fighting, etc.
-    </p>
+    <h3p>
     <p>
         <input type="radio" name="AB6" value="1" id="AB6-1"><label for="AB6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AB6" value="2" id="AB6-2"><label for="AB6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -235,9 +243,9 @@
         <input type="radio" name="AB6" value="5" id="AB6-5"><label for="AB6-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AB6" value="6" id="AB6-6"><label for="AB6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I need other people so much that I worry about losing them.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AB7" value="1" id="AB7-1"><label for="AB7-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AB7" value="2" id="AB7-2"><label for="AB7-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -246,9 +254,9 @@
         <input type="radio" name="AB7" value="5" id="AB7-5"><label for="AB7-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AB7" value="6" id="AB7-6"><label for="AB7-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I can't be myself or express what I really feel, or people will leave me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AB8" value="1" id="AB8-1"><label for="AB8-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AB8" value="2" id="AB8-2"><label for="AB8-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -258,9 +266,9 @@
         <input type="radio" name="AB8" value="6" id="AB8-6"><label for="AB8-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I feel that I cannot let my guard down in the presence of other people, or else they will intentionally hurt me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="MA1" value="1" id="MA1-1"><label for="MA1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="MA1" value="2" id="MA1-2"><label for="MA1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -269,9 +277,9 @@
         <input type="radio" name="MA1" value="5" id="MA1-5"><label for="MA1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="MA1" value="6" id="MA1-6"><label for="MA1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         It is only a matter of time before someone betrays me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="MA2" value="1" id="MA2-1"><label for="MA2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="MA2" value="2" id="MA2-2"><label for="MA2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -280,9 +288,9 @@
         <input type="radio" name="MA2" value="5" id="MA2-5"><label for="MA2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="MA2" value="6" id="MA2-6"><label for="MA2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I have a great deal of difficulty trusting people.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="MA3" value="1" id="MA3-1"><label for="MA3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="MA3" value="2" id="MA3-2"><label for="MA3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -291,9 +299,9 @@
         <input type="radio" name="MA3" value="5" id="MA3-5"><label for="MA3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="MA3" value="6" id="MA3-6"><label for="MA3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I set up "tests" for other people, to see if they are telling me the truth and are well-intentioned.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="MA4" value="1" id="MA4-1"><label for="MA4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="MA4" value="2" id="MA4-2"><label for="MA4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -302,9 +310,9 @@
         <input type="radio" name="MA4" value="5" id="MA4-5"><label for="MA4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="MA4" value="6" id="MA4-6"><label for="MA4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I subscribe to the belief: "Control or be controlled.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="MA5" value="1" id="MA5-1"><label for="MA5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="MA5" value="2" id="MA5-2"><label for="MA5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -314,9 +322,9 @@
         <input type="radio" name="MA5" value="6" id="MA5-6"><label for="MA5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I'm fundamentally different from other people.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SI1" value="1" id="SI1-1"><label for="SI1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SI1" value="2" id="SI1-2"><label for="SI1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -325,9 +333,9 @@
         <input type="radio" name="SI1" value="5" id="SI1-5"><label for="SI1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SI1" value="6" id="SI1-6"><label for="SI1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I don't belong; I'm a loner.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SI2" value="1" id="SI2-1"><label for="SI2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SI2" value="2" id="SI2-2"><label for="SI2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -336,9 +344,9 @@
         <input type="radio" name="SI2" value="5" id="SI2-5"><label for="SI2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SI2" value="6" id="SI2-6"><label for="SI2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I always feel on the outside of groups.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SI3" value="1" id="SI3-1"><label for="SI3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SI3" value="2" id="SI3-2"><label for="SI3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -347,9 +355,9 @@
         <input type="radio" name="SI3" value="5" id="SI3-5"><label for="SI3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SI3" value="6" id="SI3-6"><label for="SI3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         No one really understands me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SI4" value="1" id="SI4-1"><label for="SI4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SI4" value="2" id="SI4-2"><label for="SI4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -358,9 +366,9 @@
         <input type="radio" name="SI4" value="5" id="SI4-5"><label for="SI4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SI4" value="6" id="SI4-6"><label for="SI4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I sometimes feel as if I'm an alien.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SI5" value="1" id="SI5-1"><label for="SI5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SI5" value="2" id="SI5-2"><label for="SI5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -370,9 +378,9 @@
         <input type="radio" name="SI5" value="6" id="SI5-6"><label for="SI5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         No one I desire would want to stay close to me if he/she knew the real me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DS1" value="1" id="DS1-1"><label for="DS1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DS1" value="2" id="DS1-2"><label for="DS1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -381,9 +389,9 @@
         <input type="radio" name="DS1" value="5" id="DS1-5"><label for="DS1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DS1" value="6" id="DS1-6"><label for="DS1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I am inherently flawed and defective.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DS2" value="1" id="DS2-1"><label for="DS2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DS2" value="2" id="DS2-2"><label for="DS2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -392,9 +400,9 @@
         <input type="radio" name="DS2" value="5" id="DS2-5"><label for="DS2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DS2" value="6" id="DS2-6"><label for="DS2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I feel that I'm not lovable.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DS3" value="1" id="DS3-1"><label for="DS3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DS3" value="2" id="DS3-2"><label for="DS3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -403,9 +411,9 @@
         <input type="radio" name="DS3" value="5" id="DS3-5"><label for="DS3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DS3" value="6" id="DS3-6"><label for="DS3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I am too unacceptable in very basic ways to reveal myself to other people.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DS4" value="1" id="DS4-1"><label for="DS4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DS4" value="2" id="DS4-2"><label for="DS4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -414,9 +422,9 @@
         <input type="radio" name="DS4" value="5" id="DS4-5"><label for="DS4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DS4" value="6" id="DS4-6"><label for="DS4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         When people like me, I feel I am fooling them.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DS5" value="1" id="DS5-1"><label for="DS5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DS5" value="2" id="DS5-2"><label for="DS5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -425,9 +433,9 @@
         <input type="radio" name="DS5" value="5" id="DS5-5"><label for="DS5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DS5" value="6" id="DS5-6"><label for="DS5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I cannot understand how anyone could love me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DS6" value="1" id="DS6-1"><label for="DS6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DS6" value="2" id="DS6-2"><label for="DS6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -437,9 +445,9 @@
         <input type="radio" name="DS6" value="6" id="DS6-6"><label for="DS6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         Almost nothing I do at work (or school) is as good as other people can do.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FA1" value="1" id="FA1-1"><label for="FA1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FA1" value="2" id="FA1-2"><label for="FA1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -448,9 +456,9 @@
         <input type="radio" name="FA1" value="5" id="FA1-5"><label for="FA1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="FA1" value="6" id="FA1-6"><label for="FA1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         Most other people are more capable than I am in areas of work (or school) and achievement.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FA2" value="1" id="FA2-1"><label for="FA2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FA2" value="2" id="FA2-2"><label for="FA2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -459,9 +467,9 @@
         <input type="radio" name="FA2" value="5" id="FA2-5"><label for="FA2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="FA2" value="6" id="FA2-6"><label for="FA2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I'm a failure.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FA3" value="1" id="FA3-1"><label for="FA3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FA3" value="2" id="FA3-2"><label for="FA3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -470,9 +478,9 @@
         <input type="radio" name="FA3" value="5" id="FA3-5"><label for="FA3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="FA3" value="6" id="FA3-6"><label for="FA3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I'm not as talented as most people are at their work (or at school)
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FA4" value="1" id="FA4-1"><label for="FA4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FA4" value="2" id="FA4-2"><label for="FA4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -481,9 +489,9 @@
         <input type="radio" name="FA4" value="5" id="FA4-5"><label for="FA4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="FA4" value="6" id="FA4-6"><label for="FA4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I often feel embarrassed around other people, because I don't measure up to them in terms of my accomplishments.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FA5" value="1" id="FA5-1"><label for="FA5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FA5" value="2" id="FA5-2"><label for="FA5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -492,9 +500,9 @@
         <input type="radio" name="FA5" value="5" id="FA5-5"><label for="FA5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="FA5" value="6" id="FA5-6"><label for="FA5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I often compare my accomplishments with others and feel that they are much more successful.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FA6" value="1" id="FA6-1"><label for="FA6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FA6" value="2" id="FA6-2"><label for="FA6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -504,9 +512,9 @@
         <input type="radio" name="FA6" value="6" id="FA6-6"><label for="FA6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I do not feel capable of getting by on my own in everyday life.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DI1" value="1" id="DI1-1"><label for="DI1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DI1" value="2" id="DI1-2"><label for="DI1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -515,9 +523,9 @@
         <input type="radio" name="DI1" value="5" id="DI1-5"><label for="DI1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DI1" value="6" id="DI1-6"><label for="DI1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I believe that other people can take of me better than I can take care of myself.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DI2" value="1" id="DI2-1"><label for="DI2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DI2" value="2" id="DI2-2"><label for="DI2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -526,9 +534,9 @@
         <input type="radio" name="DI2" value="5" id="DI2-5"><label for="DI2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DI2" value="6" id="DI2-6"><label for="DI2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I have trouble tackling new tasks outside of work unless I have someone to guide me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DI3" value="1" id="DI3-1"><label for="DI3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DI3" value="2" id="DI3-2"><label for="DI3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -537,9 +545,9 @@
         <input type="radio" name="DI3" value="5" id="DI3-5"><label for="DI3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DI3" value="6" id="DI3-6"><label for="DI3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I screw up everything I try, even outside of work (or school)
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DI4" value="1" id="DI4-1"><label for="DI4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DI4" value="2" id="DI4-2"><label for="DI4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -548,9 +556,9 @@
         <input type="radio" name="DI4" value="5" id="DI4-5"><label for="DI4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DI4" value="6" id="DI4-6"><label for="DI4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         If I trust my own judgment in everyday situations, I'll make the wrong decision.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DI5" value="1" id="DI5-1"><label for="DI5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DI5" value="2" id="DI5-2"><label for="DI5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -559,9 +567,9 @@
         <input type="radio" name="DI5" value="5" id="DI5-5"><label for="DI5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DI5" value="6" id="DI5-6"><label for="DI5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I feel that I need someone I can rely on to give me advice about practical issues.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DI6" value="1" id="DI6-1"><label for="DI6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DI6" value="2" id="DI6-2"><label for="DI6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -570,9 +578,9 @@
         <input type="radio" name="DI6" value="5" id="DI6-5"><label for="DI6-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DI6" value="6" id="DI6-6"><label for="DI6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I feel more like a child than an adult when it comes to handling everyday responsibilities.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DI7" value="1" id="DI7-1"><label for="DI7-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DI7" value="2" id="DI7-2"><label for="DI7-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -581,9 +589,9 @@
         <input type="radio" name="DI7" value="5" id="DI7-5"><label for="DI7-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="DI7" value="6" id="DI7-6"><label for="DI7-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I find the responsibilities of everyday life overwhelming.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="DI8" value="1" id="DI8-1"><label for="DI8-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="DI8" value="2" id="DI8-2"><label for="DI8-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -593,9 +601,9 @@
         <input type="radio" name="DI8" value="6" id="DI8-6"><label for="DI8-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I feel that a disaster (natural, criminal, financial, or medical) could strike at any moment.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="VH1" value="1" id="VH1-1"><label for="VH1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="VH1" value="2" id="VH1-2"><label for="VH1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -604,9 +612,9 @@
         <input type="radio" name="VH1" value="5" id="VH1-5"><label for="VH1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="VH1" value="6" id="VH1-6"><label for="VH1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I worry about being attacked.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="VH2" value="1" id="VH2-1"><label for="VH2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="VH2" value="2" id="VH2-2"><label for="VH2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -615,9 +623,9 @@
         <input type="radio" name="VH2" value="5" id="VH2-5"><label for="VH2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="VH2" value="6" id="VH2-6"><label for="VH2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I take great precautions to avoid getting sick or hurt.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="VH3" value="1" id="VH3-1"><label for="VH3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="VH3" value="2" id="VH3-2"><label for="VH3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -626,9 +634,9 @@
         <input type="radio" name="VH3" value="5" id="VH3-5"><label for="VH3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="VH3" value="6" id="VH3-6"><label for="VH3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I worry that I'm developing a serious illness, even though nothing serious has been diagnosed by a physician.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="VH4" value="1" id="VH4-1"><label for="VH4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="VH4" value="2" id="VH4-2"><label for="VH4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -637,9 +645,9 @@
         <input type="radio" name="VH4" value="5" id="VH4-5"><label for="VH4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="VH4" value="6" id="VH4-6"><label for="VH4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I worry a lot about the bad things happening in the world: crime, pollution, etc.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="VH5" value="1" id="VH5-1"><label for="VH5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="VH5" value="2" id="VH5-2"><label for="VH5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -648,9 +656,9 @@
         <input type="radio" name="VH5" value="5" id="VH5-5"><label for="VH5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="VH5" value="6" id="VH5-6"><label for="VH5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I feel that the world is a dangerous place.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="VH6" value="1" id="VH6-1"><label for="VH6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="VH6" value="2" id="VH6-2"><label for="VH6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -660,9 +668,9 @@
         <input type="radio" name="VH6" value="6" id="VH6-6"><label for="VH6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         My parent(s) and I tend to be overinvolved in each other's lives and problems.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EM1" value="1" id="EM1-1"><label for="EM1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EM1" value="2" id="EM1-2"><label for="EM1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -671,10 +679,9 @@
         <input type="radio" name="EM1" value="5" id="EM1-5"><label for="EM1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EM1" value="6" id="EM1-6"><label for="EM1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        It is very difficult for my parent(s) and me to keep intimate details from each other, without feeling betrayed
-        or guilty.
-    </p>
+    <h3>
+        It is very difficult for my parent(s) and me to keep intimate details from each other, without feeling betrayed or guilty.
+    </h3>
     <p>
         <input type="radio" name="EM2" value="1" id="EM2-1"><label for="EM2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EM2" value="2" id="EM2-2"><label for="EM2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -683,10 +690,9 @@
         <input type="radio" name="EM2" value="5" id="EM2-5"><label for="EM2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EM2" value="6" id="EM2-6"><label for="EM2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        My parent(s) and I must speak to each other almost every day, or else one of us feels guilty, hurt,
-        disappointed, or alone.
-    </p>
+    <h3>
+        My parent(s) and I must speak to each other almost every day, or else one of us feels guilty, hurt, disappointed, or alone.
+    </h3>
     <p>
         <input type="radio" name="EM3" value="1" id="EM3-1"><label for="EM3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EM3" value="2" id="EM3-2"><label for="EM3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -695,9 +701,9 @@
         <input type="radio" name="EM3" value="5" id="EM3-5"><label for="EM3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EM3" value="6" id="EM3-6"><label for="EM3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I often feel that I do not have a separate identity from my parents or partner.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EM4" value="1" id="EM4-1"><label for="EM4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EM4" value="2" id="EM4-2"><label for="EM4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -706,10 +712,9 @@
         <input type="radio" name="EM4" value="5" id="EM4-5"><label for="EM4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EM4" value="6" id="EM4-6"><label for="EM4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        It is very difficult for me to maintain any distance from the people I am intimate with; I have trouble keeping
-        any separate sense of myself.
-    </p>
+    <h3>
+        It is very difficult for me to maintain any distance from the people I am intimate with; I have trouble keeping any separate sense of myself.
+    </h3>
     <p>
         <input type="radio" name="EM5" value="1" id="EM5-1"><label for="EM5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EM5" value="2" id="EM5-2"><label for="EM5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -718,9 +723,9 @@
         <input type="radio" name="EM5" value="5" id="EM5-5"><label for="EM5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EM5" value="6" id="EM5-6"><label for="EM5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I often feel that I have no privacy when it comes to my parent(s) or partner.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EM6" value="1" id="EM6-1"><label for="EM6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EM6" value="2" id="EM6-2"><label for="EM6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -729,9 +734,9 @@
         <input type="radio" name="EM6" value="5" id="EM6-5"><label for="EM6-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EM6" value="6" id="EM6-6"><label for="EM6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I feel that my parent(s) are, or would be, very hurt about my living on my own, away from them.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EM7" value="1" id="EM7-1"><label for="EM7-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EM7" value="2" id="EM7-2"><label for="EM7-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -741,9 +746,9 @@
         <input type="radio" name="EM7" value="6" id="EM7-6"><label for="EM7-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I believe that if I do what I want, I'm only asking for trouble.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SB1" value="1" id="SB1-1"><label for="SB1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SB1" value="2" id="SB1-2"><label for="SB1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -752,9 +757,9 @@
         <input type="radio" name="SB1" value="5" id="SB1-5"><label for="SB1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SB1" value="6" id="SB1-6"><label for="SB1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         In relationships, I let the other person have the upper hand.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SB2" value="1" id="SB2-1"><label for="SB2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SB2" value="2" id="SB2-2"><label for="SB2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -763,9 +768,9 @@
         <input type="radio" name="SB2" value="5" id="SB2-5"><label for="SB2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SB2" value="6" id="SB2-6"><label for="SB2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I've always let others make choices for me, so I really don't know what I want for myself.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SB3" value="1" id="SB3-1"><label for="SB3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SB3" value="2" id="SB3-2"><label for="SB3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -774,9 +779,9 @@
         <input type="radio" name="SB3" value="5" id="SB3-5"><label for="SB3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SB3" value="6" id="SB3-6"><label for="SB3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I worry a lot about pleasing other people, so they won't reject me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SB4" value="1" id="SB4-1"><label for="SB4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SB4" value="2" id="SB4-2"><label for="SB4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -785,9 +790,9 @@
         <input type="radio" name="SB4" value="5" id="SB4-5"><label for="SB4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SB4" value="6" id="SB4-6"><label for="SB4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I will go to much greater lengths than most people to avoid confrontations.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SB5" value="1" id="SB5-1"><label for="SB5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SB5" value="2" id="SB5-2"><label for="SB5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -797,9 +802,9 @@
         <input type="radio" name="SB5" value="6" id="SB5-6"><label for="SB5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I give more to other people than I get back in return.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SS1" value="1" id="SS1-1"><label for="SS1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SS1" value="2" id="SS1-2"><label for="SS1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -808,9 +813,9 @@
         <input type="radio" name="SS1" value="5" id="SS1-5"><label for="SS1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SS1" value="6" id="SS1-6"><label for="SS1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I'm the one who usually ends up taking care of the people I'm close to.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SS2" value="1" id="SS2-1"><label for="SS2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SS2" value="2" id="SS2-2"><label for="SS2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -819,9 +824,9 @@
         <input type="radio" name="SS2" value="5" id="SS2-5"><label for="SS2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SS2" value="6" id="SS2-6"><label for="SS2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         No matter how busy I am, I can always find time for others.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SS3" value="1" id="SS3-1"><label for="SS3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SS3" value="2" id="SS3-2"><label for="SS3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -830,9 +835,9 @@
         <input type="radio" name="SS3" value="5" id="SS3-5"><label for="SS3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SS3" value="6" id="SS3-6"><label for="SS3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I've always been the one who listens to everyone else's problems.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SS4" value="1" id="SS4-1"><label for="SS4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SS4" value="2" id="SS4-2"><label for="SS4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -841,9 +846,9 @@
         <input type="radio" name="SS4" value="5" id="SS4-5"><label for="SS4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SS4" value="6" id="SS4-6"><label for="SS4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         Other people see me as doing too much for others and not enough for myself.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SS5" value="1" id="SS5-1"><label for="SS5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SS5" value="2" id="SS5-2"><label for="SS5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -852,9 +857,9 @@
         <input type="radio" name="SS5" value="5" id="SS5-5"><label for="SS5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="SS5" value="6" id="SS5-6"><label for="SS5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         No matter how much I give; I feel it is never enough.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="SS6" value="1" id="SS6-1"><label for="SS6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="SS6" value="2" id="SS6-2"><label for="SS6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -864,9 +869,9 @@
         <input type="radio" name="SS6" value="6" id="SS6-6"><label for="SS6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I worry about losing control of my actions.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FLC1" value="1" id="FLC1-1"><label for="FLC1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FLC1" value="2" id="FLC1-2"><label for="FLC1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -875,9 +880,9 @@
         <input type="radio" name="FLC1" value="5" id="FLC1-5"><label for="FLC1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="FLC1" value="6" id="FLC1-6"><label for="FLC1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I worry that I might seriously harm someone physically or emotionally if my anger gets out of control.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FLC2" value="1" id="FLC2-1"><label for="FLC2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FLC2" value="2" id="FLC2-2"><label for="FLC2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -886,9 +891,9 @@
         <input type="radio" name="FLC2" value="5" id="FLC2-5"><label for="FLC2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="FLC2" value="6" id="FLC2-6"><label for="FLC2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I feel that I must control my emotions and impulses, or something bad is likely to happen.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FLC3" value="1" id="FLC3-1"><label for="FLC3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FLC3" value="2" id="FLC3-2"><label for="FLC3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -897,9 +902,9 @@
         <input type="radio" name="FLC3" value="5" id="FLC3-5"><label for="FLC3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="FLC3" value="6" id="FLC3-6"><label for="FLC3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         A lot of anger and resentment build up inside of me that I don't express.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="FLC4" value="1" id="FLC4-1"><label for="FLC4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="FLC4" value="2" id="FLC4-2"><label for="FLC4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -909,9 +914,9 @@
         <input type="radio" name="FLC4" value="6" id="FLC4-6"><label for="FLC4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I am too self-conscious to show positive feelings to others (e.g., affection, showing I care)
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EC1" value="1" id="EC1-1"><label for="EC1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EC1" value="2" id="EC1-2"><label for="EC1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -920,9 +925,9 @@
         <input type="radio" name="EC1" value="5" id="EC1-5"><label for="EC1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EC1" value="6" id="EC1-6"><label for="EC1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I find it embarrassing to express my feelings to others.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EC2" value="1" id="EC2-1"><label for="EC2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EC2" value="2" id="EC2-2"><label for="EC2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -931,9 +936,9 @@
         <input type="radio" name="EC2" value="5" id="EC2-5"><label for="EC2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EC2" value="6" id="EC2-6"><label for="EC2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I find it hard to be warm and spontaneous.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EC3" value="1" id="EC3-1"><label for="EC3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EC3" value="2" id="EC3-2"><label for="EC3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -942,9 +947,9 @@
         <input type="radio" name="EC3" value="5" id="EC3-5"><label for="EC3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EC3" value="6" id="EC3-6"><label for="EC3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I control myself so much that people think I am unemotional.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EC4" value="1" id="EC4-1"><label for="EC4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EC4" value="2" id="EC4-2"><label for="EC4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -953,9 +958,9 @@
         <input type="radio" name="EC4" value="5" id="EC4-5"><label for="EC4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="EC4" value="6" id="EC4-6"><label for="EC4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         People see me as uptight emotionally.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="EC5" value="1" id="EC5-1"><label for="EC5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="EC5" value="2" id="EC5-2"><label for="EC5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -966,9 +971,9 @@
     </p>
 
 
-    <p>
+    <h3>
         I must be the best at most of what I do; I can't accept second best.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="US1" value="1" id="US1-1"><label for="US1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="US1" value="2" id="US1-2"><label for="US1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -977,9 +982,9 @@
         <input type="radio" name="US1" value="5" id="US1-5"><label for="US1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="US1" value="6" id="US1-6"><label for="US1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I strive to keep almost everything in perfect order.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="US2" value="1" id="US2-1"><label for="US2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="US2" value="2" id="US2-2"><label for="US2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -988,9 +993,9 @@
         <input type="radio" name="US2" value="5" id="US2-5"><label for="US2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="US2" value="6" id="US2-6"><label for="US2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I have so much to accomplish that there is almost no time to really relax.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="US3" value="1" id="US3-1"><label for="US3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="US3" value="2" id="US3-2"><label for="US3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -999,9 +1004,9 @@
         <input type="radio" name="US3" value="5" id="US3-5"><label for="US3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="US3" value="6" id="US3-6"><label for="US3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I must meet all my responsibilities.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="US4" value="1" id="US4-1"><label for="US4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="US4" value="2" id="US4-2"><label for="US4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1010,9 +1015,9 @@
         <input type="radio" name="US4" value="5" id="US4-5"><label for="US4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="US4" value="6" id="US4-6"><label for="US4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I often sacrifice pleasure and happiness to meet my own standards.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="US5" value="1" id="US5-1"><label for="US5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="US5" value="2" id="US5-2"><label for="US5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1021,9 +1026,9 @@
         <input type="radio" name="US5" value="5" id="US5-5"><label for="US5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="US5" value="6" id="US5-6"><label for="US5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I can't let myself off the hook easily or make excuses for my mistakes.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="US6" value="1" id="US6-1"><label for="US6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="US6" value="2" id="US6-2"><label for="US6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1032,9 +1037,9 @@
         <input type="radio" name="US6" value="5" id="US6-5"><label for="US6-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="US6" value="6" id="US6-6"><label for="US6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I always must be Number One, in terms of my performance.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="US7" value="1" id="US7-1"><label for="US7-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="US7" value="2" id="US7-2"><label for="US7-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1044,9 +1049,9 @@
         <input type="radio" name="US7" value="6" id="US7-6"><label for="US7-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I have a lot of trouble accepting "no" for an answer when I want something from other people.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ET1" value="1" id="ET1-1"><label for="ET1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ET1" value="2" id="ET1-2"><label for="ET1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1055,9 +1060,9 @@
         <input type="radio" name="ET1" value="5" id="ET1-5"><label for="ET1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ET1" value="6" id="ET1-6"><label for="ET1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I hate to be constrained or kept from doing what I want.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ET2" value="1" id="ET2-1"><label for="ET2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ET2" value="2" id="ET2-2"><label for="ET2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1066,9 +1071,9 @@
         <input type="radio" name="ET2" value="5" id="ET2-5"><label for="ET2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ET2" value="6" id="ET2-6"><label for="ET2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I feel that I shouldn't have to follow the normal rules and conventions other people do.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ET3" value="1" id="ET3-1"><label for="ET3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ET3" value="2" id="ET3-2"><label for="ET3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1077,9 +1082,9 @@
         <input type="radio" name="ET3" value="5" id="ET3-5"><label for="ET3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ET3" value="6" id="ET3-6"><label for="ET3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I often find that I am so involved in my own priorities that I don't have time to give to friends or family.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ET4" value="1" id="ET4-1"><label for="ET4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ET4" value="2" id="ET4-2"><label for="ET4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1088,9 +1093,9 @@
         <input type="radio" name="ET4" value="5" id="ET4-5"><label for="ET4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ET4" value="6" id="ET4-6"><label for="ET4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         People often tell me I am very controlling about the ways things are done.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ET5" value="1" id="ET5-1"><label for="ET5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ET5" value="2" id="ET5-2"><label for="ET5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1099,9 +1104,9 @@
         <input type="radio" name="ET5" value="5" id="ET5-5"><label for="ET5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="ET5" value="6" id="ET5-6"><label for="ET5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I can't tolerate other people telling me what to do.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="ET6" value="1" id="ET6-1"><label for="ET6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="ET6" value="2" id="ET6-2"><label for="ET6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1111,9 +1116,9 @@
         <input type="radio" name="ET6" value="6" id="ET6-6"><label for="ET6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         I can't seem to discipline myself to complete routine or boring tasks.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="IS1" value="1" id="IS1-1"><label for="IS1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="IS1" value="2" id="IS1-2"><label for="IS1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1122,10 +1127,9 @@
         <input type="radio" name="IS1" value="5" id="IS1-5"><label for="IS1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="IS1" value="6" id="IS1-6"><label for="IS1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        Often I allow myself to carry through on impulses and express emotions that get me into trouble or hurt other
-        people.
-    </p>
+    <h3>
+        Often I allow myself to carry through on impulses and express emotions that get me into trouble or hurt other people.
+    </h3>
     <p>
         <input type="radio" name="IS2" value="1" id="IS2-1"><label for="IS2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="IS2" value="2" id="IS2-2"><label for="IS2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1134,9 +1138,9 @@
         <input type="radio" name="IS2" value="5" id="IS2-5"><label for="IS2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="IS2" value="6" id="IS2-6"><label for="IS2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I get bored very easily.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="IS3" value="1" id="IS3-1"><label for="IS3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="IS3" value="2" id="IS3-2"><label for="IS3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1145,9 +1149,9 @@
         <input type="radio" name="IS3" value="5" id="IS3-5"><label for="IS3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="IS3" value="6" id="IS3-6"><label for="IS3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         When tasks become difficult, I usually cannot persevere and complete them.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="IS4" value="1" id="IS4-1"><label for="IS4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="IS4" value="2" id="IS4-2"><label for="IS4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1156,9 +1160,9 @@
         <input type="radio" name="IS4" value="5" id="IS4-5"><label for="IS4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="IS4" value="6" id="IS4-6"><label for="IS4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I can't force myself to do things I don't enjoy, even when I know it's for my own good.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="IS5" value="1" id="IS5-1"><label for="IS5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="IS5" value="2" id="IS5-2"><label for="IS5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1167,9 +1171,9 @@
         <input type="radio" name="IS5" value="5" id="IS5-5"><label for="IS5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="IS5" value="6" id="IS5-6"><label for="IS5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I have rarely been able to stick to my resolutions.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="IS6" value="1" id="IS6-1"><label for="IS6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="IS6" value="2" id="IS6-2"><label for="IS6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1178,9 +1182,9 @@
         <input type="radio" name="IS6" value="5" id="IS6-5"><label for="IS6-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="IS6" value="6" id="IS6-6"><label for="IS6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I often do things impulsively that I later regret.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="IS7" value="1" id="IS7-1"><label for="IS7-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="IS7" value="2" id="IS7-2"><label for="IS7-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1190,9 +1194,9 @@
         <input type="radio" name="IS7" value="6" id="IS7-6"><label for="IS7-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         It is important to me to be liked by almost everyone I know.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AS1" value="1" id="AS1-1"><label for="AS1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AS1" value="2" id="AS1-2"><label for="AS1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1201,9 +1205,9 @@
         <input type="radio" name="AS1" value="5" id="AS1-5"><label for="AS1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AS1" value="6" id="AS1-6"><label for="AS1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        I change myself depending on the people I’m with, so they’ll like me more.
-    </p>
+    <h3>
+        I change myself depending on the people I'm with, so they'll like me more.
+    </h3>
     <p>
         <input type="radio" name="AS2" value="1" id="AS2-1"><label for="AS2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AS2" value="2" id="AS2-2"><label for="AS2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1212,9 +1216,9 @@
         <input type="radio" name="AS2" value="5" id="AS2-5"><label for="AS2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AS2" value="6" id="AS2-6"><label for="AS2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         My self-esteem is based mostly on how other people view me.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AS3" value="1" id="AS3-1"><label for="AS3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AS3" value="2" id="AS3-2"><label for="AS3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1223,9 +1227,9 @@
         <input type="radio" name="AS3" value="5" id="AS3-5"><label for="AS3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AS3" value="6" id="AS3-6"><label for="AS3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        Even if I don’t like someone, I still want him or her to like me.
-    </p>
+    <h3>
+        Even if I don't like someone, I still want him or her to like me.
+    </h3>
     <p>
         <input type="radio" name="AS4" value="1" id="AS4-1"><label for="AS4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AS4" value="2" id="AS4-2"><label for="AS4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1234,9 +1238,9 @@
         <input type="radio" name="AS4" value="5" id="AS4-5"><label for="AS4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="AS4" value="6" id="AS4-6"><label for="AS4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         Unless I get a lot of attention from others, I feel less important.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="AS5" value="1" id="AS5-1"><label for="AS5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="AS5" value="2" id="AS5-2"><label for="AS5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1246,9 +1250,9 @@
         <input type="radio" name="AS5" value="6" id="AS5-6"><label for="AS5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
-        You can’t be too careful; something will almost always go wrong.
-    </p>
+    <h3>
+        You can't be too careful; something will almost always go wrong.
+    </h3>
     <p>
         <input type="radio" name="NP1" value="1" id="NP1-1"><label for="NP1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="NP1" value="2" id="NP1-2"><label for="NP1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1257,9 +1261,9 @@
         <input type="radio" name="NP1" value="5" id="NP1-5"><label for="NP1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="NP1" value="6" id="NP1-6"><label for="NP1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I worry that a wrong decision could lead to disaster.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="NP2" value="1" id="NP2-1"><label for="NP2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="NP2" value="2" id="NP2-2"><label for="NP2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1268,9 +1272,9 @@
         <input type="radio" name="NP2" value="5" id="NP2-5"><label for="NP2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="NP2" value="6" id="NP2-6"><label for="NP2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I often obsess over minor decisions, because the consequences of making a mistake seem so serious.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="NP3" value="1" id="NP3-1"><label for="NP3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="NP3" value="2" id="NP3-2"><label for="NP3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1279,9 +1283,9 @@
         <input type="radio" name="NP3" value="5" id="NP3-5"><label for="NP3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="NP3" value="6" id="NP3-6"><label for="NP3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        I feel better assuming things will not work out for me, so that I don’t feel disappointed if things go wrong.
-    </p>
+    <h3>
+        I feel better assuming things will not work out for me, so that I don't feel disappointed if things go wrong.
+    </h3>
     <p>
         <input type="radio" name="NP4" value="1" id="NP4-1"><label for="NP4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="NP4" value="2" id="NP4-2"><label for="NP4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1290,9 +1294,9 @@
         <input type="radio" name="NP4" value="5" id="NP4-5"><label for="NP4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="NP4" value="6" id="NP4-6"><label for="NP4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I tend to be pessimistic.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="NP5" value="1" id="NP5-1"><label for="NP5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="NP5" value="2" id="NP5-2"><label for="NP5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1301,10 +1305,9 @@
         <input type="radio" name="NP5" value="5" id="NP5-5"><label for="NP5-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="NP5" value="6" id="NP5-6"><label for="NP5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        If people get too enthusiastic about something, I become uncomfortable and feel like warning them of what could
-        go wrong.
-    </p>
+    <h3>
+        If people get too enthusiastic about something, I become uncomfortable and feel like warning them of what could go wrong.
+    </h3>
     <p>
         <input type="radio" name="NP6" value="1" id="NP6-1"><label for="NP6-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="NP6" value="2" id="NP6-2"><label for="NP6-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1314,9 +1317,9 @@
         <input type="radio" name="NP6" value="6" id="NP6-6"><label for="NP6-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
+    <h3>
         If I make a mistake, I deserve to be punished.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="PUS1" value="1" id="PUS1-1"><label for="PUS1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUS1" value="2" id="PUS1-2"><label for="PUS1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1325,9 +1328,9 @@
         <input type="radio" name="PUS1" value="5" id="PUS1-5"><label for="PUS1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="PUS1" value="6" id="PUS1-6"><label for="PUS1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         There is no excuse if I make mistake.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="PUS2" value="1" id="PUS2-1"><label for="PUS2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUS2" value="2" id="PUS2-2"><label for="PUS2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1336,9 +1339,9 @@
         <input type="radio" name="PUS2" value="5" id="PUS2-5"><label for="PUS2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="PUS2" value="6" id="PUS2-6"><label for="PUS2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        If I don’t do the job, I should suffer the consequences.
-    </p>
+    <h3>
+        If I don't do the job, I should suffer the consequences.
+    </h3>
     <p>
         <input type="radio" name="PUS3" value="1" id="PUS3-1"><label for="PUS3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUS3" value="2" id="PUS3-2"><label for="PUS3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1347,9 +1350,9 @@
         <input type="radio" name="PUS3" value="5" id="PUS3-5"><label for="PUS3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="PUS3" value="6" id="PUS3-6"><label for="PUS3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        It doesn’t matter why I make a mistake; when I do something wrong, I should pay the price.
-    </p>
+    <h3>
+        It doesn't matter why I make a mistake; when I do something wrong, I should pay the price.
+    </h3>
     <p>
         <input type="radio" name="PUS4" value="1" id="PUS4-1"><label for="PUS4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUS4" value="2" id="PUS4-2"><label for="PUS4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1358,9 +1361,9 @@
         <input type="radio" name="PUS4" value="5" id="PUS4-5"><label for="PUS4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="PUS4" value="6" id="PUS4-6"><label for="PUS4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        I’m a bad person who deserves to be punished.
-    </p>
+    <h3>
+        I'm a bad person who deserves to be punished.
+    </h3>
     <p>
         <input type="radio" name="PUS5" value="1" id="PUS5-1"><label for="PUS5-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUS5" value="2" id="PUS5-2"><label for="PUS5-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1370,9 +1373,9 @@
         <input type="radio" name="PUS5" value="6" id="PUS5-6"><label for="PUS5-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
 
-    <p>
-        People who don’t “pull their own weight” should get punished in some way.
-    </p>
+    <h3>
+        People who don't “pull their own weight” should get punished in some way.
+    </h3>
     <p>
         <input type="radio" name="PUO1" value="1" id="PUO1-1"><label for="PUO1-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUO1" value="2" id="PUO1-2"><label for="PUO1-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1381,10 +1384,9 @@
         <input type="radio" name="PUO1" value="5" id="PUO1-5"><label for="PUO1-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="PUO1" value="6" id="PUO1-6"><label for="PUO1-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
-        Most of the time, I don’t accept the excuses other people make. They’re just not willing to accept
-        responsibility and pay the consequences.
-    </p>
+    <h3>
+        Most of the time, I don't accept the excuses other people make. They're just not willing to accept responsibility and pay the consequences.
+    </h3>
     <p>
         <input type="radio" name="PUO2" value="1" id="PUO2-1"><label for="PUO2-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUO2" value="2" id="PUO2-2"><label for="PUO2-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1393,9 +1395,9 @@
         <input type="radio" name="PUO2" value="5" id="PUO2-5"><label for="PUO2-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="PUO2" value="6" id="PUO2-6"><label for="PUO2-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I hold grudges, even after someone has apologized.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="PUO3" value="1" id="PUO3-1"><label for="PUO3-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUO3" value="2" id="PUO3-2"><label for="PUO3-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1404,9 +1406,9 @@
         <input type="radio" name="PUO3" value="5" id="PUO3-5"><label for="PUO3-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="PUO3" value="6" id="PUO3-6"><label for="PUO3-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
-    <p>
+    <h3>
         I get angry when people make excuses for themselves or blame other people for their problems.
-    </p>
+    </h3>
     <p>
         <input type="radio" name="PUO4" value="1" id="PUO4-1"><label for="PUO4-1">1<span class="descriptions"> = Completely untrue of me</span></label></input>
         <input type="radio" name="PUO4" value="2" id="PUO4-2"><label for="PUO4-2">2<span class="descriptions"> = Mostly untrue of me</span></label></input>
@@ -1415,12 +1417,13 @@
         <input type="radio" name="PUO4" value="5" id="PUO4-5"><label for="PUO4-5">5<span class="descriptions"> = Mostly true of me</span></label></input>
         <input type="radio" name="PUO4" value="6" id="PUO4-6"><label for="PUO4-6">6<span class="descriptions"> = Describes me perfectly</span></label></input>
     </p>
+</main>
 
+<footer>
     <p>
-        <small>&copy; 2003, Jeffrey Young, Ph.D., and Gary Brown, Ph.D. Unauthorized reproduction without written
-            consent of the authors is prohibited. For more information, write: Schema Therapy Institute, 36 West 44th
-            Street, Suite 1007, New York, NY 10036.</small>
+        <small>&copy; 2003, Jeffrey Young, Ph.D., and Gary Brown, Ph.D. Unauthorized reproduction without written consent of the authors is prohibited. For more information, write: Schema Therapy Institute, 36 West 44th Street, Suite 1007, New York, NY 10036.</small>
     </p>
+    </footer>
     <script>
         /**
          * Functionality:
